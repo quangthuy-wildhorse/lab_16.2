@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+/* font-size: 18 / 20 / 24 / 36 / 46  */
+
+:root {
+  --color-dark-blue: rgba(27, 27, 50, 0.8);
+  --color-white: #fff;
+  --color-green: green;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  background-image: linear-gradient(
+      rgba(58, 58, 158, 0.6),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  color: var(--color-white);
+  background-size: contain;
+}
+
+header {
+  margin: 2rem;
+}
+
+#main {
+  max-width: 1200px;
+  height: auto;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 46px;
+  padding: 10px 0;
+}
+
+#description,
+.text {
+  font-size: 24px;
+}
+
+#form-container {
+  margin: 0 auto;
+  width: 600px;
+  background-color: var(--color-dark-blue);
+  text-align: left;
+  border-radius: 5px;
+  padding: 3rem;
+}
+
+.form-group {
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+/* tạo kiểu */
+.box-text,
+select,
+.textarea,
+button {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 7px;
+  outline: none;
+}
+
+/* đưa các lựa chọn theo hàng dọc */
+label {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+/* BUTTON */
+button {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border: none;
+  box-shadow: 0 0 40px black;
+}
+
+/* hiệu ứng khi di chuột vào */
+button:hover {
+  width: 98%;
+  padding: 7px;
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 780px) {
+  #form-container {
+    max-width: 340px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  #description {
+    font-size: 20px;
+  }
+}
