@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&family=Inter&family=Roboto:ital,wght@0,500;1,700&family=Rubik:ital,wght@0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lab16.2.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          <i>Thank you for taking the time to help us improve the platform</i>
+        </p>
+      </header>
+
+      <section id="form-container">
+        <form id="survey-form">
+          <!-- tạo form nhập liệu -->
+          <!-- Name -->
+          <div class="form-group">
+            <label for="name-label">Name</label>
+            <input
+              class="box-text"
+              type="text"
+              id="name-label"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email-label">Email</label>
+            <input
+              class="box-text"
+              type="email"
+              id="email-label"
+              name="email"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+
+          <!-- AGE -->
+          <div class="form-group">
+            <label for="number-label">Age (optional)</label>
+            <input
+              class="box-text"
+              type="number"
+              min="18"
+              max="60"
+              id="number-label"
+              name="age"
+              placeholder="AGE"
+              required
+            />
+          </div>
+
+          <!-- tạo thanh sổ lựa chọn các trường có sẵn -->
+          <div class="form-group">
+            <div class="text">
+              Which option best describes your current role?
+            </div>
+            <select id="dropdown">
+              <option value="select curren role" disabled="disabled" selected>
+                <p>Select current role</p>
+              </option>
+              <option value="student">Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <!-- Tạo lựa chọn type Radio -->
+          <div class="form-group">
+            <div class="text">
+              Would you recommend freeCodeCamp to a friend?
+            </div>
+            <label for="Definitely">
+              <input
+                type="radio"
+                id="Definitely"
+                value="Definitely"
+                name="checkbox"
+                checked
+              />Definitely
+            </label>
+
+            <label for="Maybe">
+              <input
+                type="radio"
+                id="Maybe"
+                value="Maybe"
+                name="checkbox"
+              />Maybe
+            </label>
+
+            <label for="Not sure">
+              <input
+                type="radio"
+                id="Not sure"
+                value="Not sure"
+                name="checkbox"
+              />Not sure
+            </label>
+          </div>
+
+          <!-- tạo thanh sổ lựa chọn các trường có sẵn -->
+          <div class="form-group">
+            <div class="text">
+              What is your favorite feature of freeCodeCamp?
+            </div>
+            <select id="dropdown-2">
+              <option value="select an option" disabled="disabled" selected>
+                Select an option
+              </option>
+              <option value="chanllenges">Challenges</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Community</option>
+              <option value="Open Source">Open Source</option>
+            </select>
+          </div>
+
+          <!-- Tạo check-box -->
+          <div class="form-group">
+            <div class="text">
+              What would you like to see improved? (Check all that apply)
+            </div>
+            <label for="Front-end Projects"
+              ><input
+                type="checkbox"
+                id="Front-end Projects"
+                value="Front-end Projects"
+              />
+              Front-end Projects</label
+            >
+
+            <label for="Back-end Projects">
+              <input
+                type="checkbox"
+                id="Back-end Projects"
+                value="Back-end Projects"
+              />
+              Back-end Projects</label
+            >
+
+            <label for="Data Visualization">
+              <input
+                type="checkbox"
+                id="Data Visualization"
+                value="Data Visualization"
+              />
+              Data Visualization</label
+            >
+
+            <label for="Challenges">
+              <input type="checkbox" id="Challenges" value="Challenges" />
+              Challenges</label
+            >
+
+            <label for="Open Source Community">
+              <input
+                type="checkbox"
+                id="Open Source Community"
+                value="Open Source Community"
+              />
+              Open Source Community</label
+            >
+
+            <label for="Gitter help rooms">
+              <input
+                type="checkbox"
+                id="Gitter help rooms"
+                value="Gitter help rooms"
+              />
+              Gitter help rooms</label
+            >
+
+            <label for="Videos">
+              <input type="checkbox" id="Videos" value="Videos" />
+              Videos</label
+            >
+
+            <label for="City Meetups">
+              <input type="checkbox" id="City Meetups" value="City Meetups" />
+              City Meetups</label
+            >
+
+            <label for="Wiki">
+              <input type="checkbox" id="Wiki" value="Wiki" />
+              Wiki</label
+            >
+
+            <label for="Forum">
+              <input type="checkbox" id="Forum" value="Forum" />
+              Forum</label
+            >
+
+            <label for="Additional Courses">
+              <input
+                type="checkbox"
+                id="Additional Courses"
+                value="Additional Courses"
+              />
+              Additional Courses</label
+            >
+          </div>
+
+          <!-- COMMENT -->
+          <div class="form-group">
+            <div class="text">Any comments or suggestions?</div>
+            <!-- tạo ô nhập comments -->
+            <textarea
+              name="comment"
+              id="textarea"
+              class="textarea"
+              placeholder="Enter your comment here ..."
+            ></textarea>
+          </div>
+
+          <!-- Tạo nút Botton -->
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
